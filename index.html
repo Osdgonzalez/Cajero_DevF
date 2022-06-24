@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="cajero.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="contenido">
+        <main class="principal-login">
+            <div class="row">
+                <div class="col">
+                    <h1 class="text-center">CAJERO ATM</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col login-input">
+                    <input type="text" id="user" class="form-control" placeholder="Ingresa tu usuario...">
+                    <input type="password" id="pass" class="form-control" placeholder="Ingresa tu contraseña...">
+                    <button class="btn btn-success" onclick="main()">Ingresar</button>
+                </div>
+            </div>
+        </main>
+
+        <section class="principal-menu">
+            <div class="row">
+                <div class="col">
+                    <h2 class="text-center" id="bienvenida">¿Qué operación deseas realizar?</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col opciones-menu">
+                    <button class="btn btn-outline-primary" onclick="accion(0)">Consultar Saldo</button>
+                    <button class="btn btn-outline-success" onclick="accion(1)">Ingresar Monto</button>
+                    <button class="btn btn-outline-warning" onclick="accion(2)">Retirar Monto</button>
+                    <button class="btn btn-outline-info" onclick="accion(4)">Cambiar Contraseña</button>
+                    <button class="btn btn-outline-danger" onclick="accion(3)">Salir</button>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="principal-operacion">
+            <div class="row">
+                <div class="col">
+                    <h2 class="text-center">Realiza tu operación</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col opciones-menu">
+                    <input type="text" id="cantidad" class="form-control" placeholder="Ingresa cantidad...">
+                    <button class="btn btn-outline-success" id="btn-operacion" onclick="validarLimite()">Realizar Operación</button>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="msj-alerta">
+            <div class="row">
+                <div class="col" >
+                    <div class="alert alert-info text-center" id="msj-alerta-cont" onclick="quitar()" role="alert">
+                        A simple info alert—check it out!
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <script src="cajero.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+body{
+    background-color: #222a50;
+}
+h1, h2{
+    color: #000015;
+}
+
+.contenido{
+    padding-top: 15vh;
+    margin-left: 30vw;
+    margin-right: 30vw;
+
+}
+
+.principal-login{
+    background-color: #9388ec;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.login-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 2rem;
+}
+
+.login-input input{
+    margin-bottom: 1rem;
+}
+
+
+
+.principal-menu{
+    background-color: #e3bfff;
+    padding: 2rem;
+    border-radius: 10px;
+    
+}
+.opciones-menu{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.opciones-menu button{
+    margin-top: 1rem;
+}
+
+
+.principal-operacion{
+    background-color: aquamarine;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+
+#msj-alerta-cont{
+    margin-top: 2rem;
+}
